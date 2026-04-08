@@ -1,184 +1,110 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 - 自我介绍</title>
-    <link rel="stylesheet" href="style.css">
+    <title>导航制作</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+        body {
+            background-color: #f0ead2;
+            font-family: "Microsoft YaHei", sans-serif;
+            color: #3d2b1f;
+        }
+        .stardew-card {
+            background: #fefae0;
+            border: 3px solid #606c38;
+            border-radius: 12px;
+            box-shadow: 0 4px 0 #4a4a4a;
+        }
+        .stardew-btn {
+            background: #606c38;
+            border: none;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 3px 0 #3e4723;
+        }
+        .stardew-btn:hover {
+            background: #4a5729;
+        }
+        .navbar {
+            background: #bc6c25 !important;
+            border-bottom: 4px solid #606c38;
+        }
+        .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .nav-link:hover {
+            color: #fefae0 !important;
+        }
+    </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">MyPortfolio</div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link active">首页</a>
-                <a href="#about" class="nav-link">关于我</a>
-                <a href="#skills" class="nav-link">技能特长</a>
-                <a href="#contact" class="nav-link">联系方式</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- 首页区域 -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="avatar-container">
-                <div class="avatar-ring"></div>
-                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.rYHXCZjmTOI2KDGcBa1fsQHaFz?w=194&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="头像" class="avatar">
-            </div>
-            <h1 class="hero-title">
-                <span class="glow">你好，我是</span>
-                <span class="name">张亚东</span>
-            </h1>
-            <p class="hero-subtitle">热爱技术 · 追求卓越 · 不断创新</p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">了解更多</a>
-                <a href="#contact" class="btn btn-secondary">联系我</a>
-            </div>
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🌾 我的主页</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">关于我</a></li>
+                <li class="nav-item"><a class="nav-link" href="works.html">作品</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">技能</a></li>
+            </ul>
         </div>
-        <div class="scroll-indicator">
-            <span>向下滚动</span>
-            <div class="arrow"></div>
-        </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- 关于我区域 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-info">
-                    <div class="info-card">
-                        <div class="info-icon">🎓</div>
-                        <h3>学校</h3>
-                        <p>江阳城建职业学院</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">💻</div>
-                        <h3>专业</h3>
-                        <p>计算机应用技术</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">📝</div>
-                        <h3>班级</h3>
-                        <p>计算机应用技术2班</p>
-                    </div>
-                </div>
-                <div class="about-description">
-                    <h3>个人简介</h3>
-                    <p>
-                        我是一名热爱编程和技术创新的大学生，对前端开发、人工智能和游戏开发有着浓厚的兴趣。
-                        在学习过程中，我不仅掌握了扎实的编程基础，还积极参与各种项目实践，
-                        不断提升自己的技术能力和解决问题的能力。
-                    </p>
-                    <p>
-                        我相信技术的力量可以改变世界，希望通过自己的努力，成为一名优秀的软件工程师，
-                        为社会创造价值。在学习之余，我也喜欢探索新的技术领域，阅读技术博客，
-                        参与开源项目，保持持续学习的态度。
-                    </p>
-                </div>
+<!-- 内容区 -->
+<div class="container mb-5">
+    <div class="stardew-card p-4 p-md-5 text-center">
+        <h1 class="fw-bold mb-3" style="color:#606c38">欢迎来到我个人网页</h1>
+        <p class="lead fs-5">用热爱耕耘，用创意收获。</p>
+        <hr class="my-4 border-3 border-success opacity-50">
+        <p class="mb-4">这里记录了我的生活、技能、作品与故事</p>
+        <a href="works.html" class="btn stardew-btn btn-lg px-4">查看我的作品 🎨</a>
+    </div>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-3">
+            <div class="stardew-card p-4 text-center h-100">
+                <h3 class="text-success">🌱 关于我</h3>
+                <p>热爱生活、喜欢设计与编程的田园风创作者。</p>
+                <a href="about.html" class="btn stardew-btn mt-auto">了解更多</a>
             </div>
         </div>
-    </section>
-
-    <!-- 技能特长区域 -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">技能特长</h2>
-            <div class="skills-grid">
-                <div class="skill-card card-1">
-                    <div class="skill-icon">🚀</div>
-                    <h3>前端开发</h3>
-                    <p>
-                        精通HTML、CSS、JavaScript，熟悉React、Vue等现代前端框架。
-                        能够创建响应式、高性能的网页应用，注重用户体验和界面设计。
-                        熟练使用Git进行版本控制，了解前端工程化和性能优化。
-                    </p>
-                    <div class="skill-tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Vue</span>
-                    </div>
-                </div>
-                <div class="skill-card card-2">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>后端开发</h3>
-                    <p>
-                        掌握Python、Node.js等后端技术，熟悉数据库设计和API开发。
-                        能够设计和实现高可用、可扩展的后端系统。
-                        了解微服务架构和容器化部署，有良好的代码规范和项目经验。
-                    </p>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-card card-3">
-                    <div class="skill-icon">🎨</div>
-                    <h3>设计能力</h3>
-                    <p>
-                        具备良好的设计思维和审美能力，熟练使用Photoshop、Figma等设计工具。
-                        能够创建视觉吸引力强、用户体验优秀的界面设计。
-                        注重细节和交互设计，追求简约而不简单的设计风格。
-                    </p>
-                    <div class="skill-tags">
-                        <span class="tag">UI设计</span>
-                        <span class="tag">UX设计</span>
-                        <span class="tag">Figma</span>
-                        <span class="tag">Photoshop</span>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="stardew-card p-4 text-center h-100">
+                <h3 class="text-warning">🎨 作品</h3>
+                <p>设计、编程、像素画、创意项目全都在这里。</p>
+                <a href="works.html" class="btn stardew-btn mt-auto">浏览作品</a>
             </div>
         </div>
-    </section>
-
-    <!-- 联系方式区域 -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">联系方式</h2>
-            <div class="contact-content">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>邮箱</h3>
-                    <p>asuna@example.com</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">💬</div>
-                    <h3>微信</h3>
-                    <p>Asuna_123</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>电话</h3>
-                    <p>138-xxxx-xxxx</p>
-                </div>
-            </div>
-            <div class="contact-message">
-                <p>欢迎随时与我联系，期待与您交流合作！</p>
+        <div class="col-md-6 col-lg-3">
+            <div class="stardew-card p-4 text-center h-100">
+                <h3 class="text-info">🛠️ 技能</h3>
+                <p>前端开发、设计、剪辑、创作技能一览。</p>
+                <a href="skills.html" class="btn stardew-btn mt-auto">查看技能</a>
             </div>
         </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Asuna. All Rights Reserved.</p>
-            <p>用心创作 · 持续进步</p>
+        <div class="col-md-6 col-lg-3">
+            <div class="stardew-card p-4 text-center h-100">
+                <h3 class="text-danger">💌 留言</h3>
+                <p>欢迎交流想法，一起在热爱的世界里成长。</p>
+                <button class="btn stardew-btn mt-auto">联系我</button>
+            </div>
         </div>
-        <div class="footer-links">
-            <a href="#home" class="footer-link">返回顶部</a>
-        </div>
-    </footer>
+    </div>
+</div>
 
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>

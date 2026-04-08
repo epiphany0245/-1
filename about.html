@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 我的主页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0ead2;
+            font-family: "Microsoft YaHei", sans-serif;
+            color: #3d2b1f;
+        }
+        .stardew-card {
+            background: #fefae0;
+            border: 3px solid #606c38;
+            border-radius: 12px;
+            box-shadow: 0 4px 0 #4a4a4a;
+        }
+        .stardew-btn {
+            background: #606c38;
+            border: none;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 3px 0 #3e4723;
+        }
+        .stardew-btn:hover {
+            background: #4a5729;
+            color: white;
+        }
+        .navbar {
+            background: #bc6c25 !important;
+            border-bottom: 4px solid #606c38;
+        }
+        .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #fefae0 !important;
+        }
+        .avatar-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #bc6c25;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info-item {
+            padding: 12px 0;
+            border-bottom: 2px dashed #dda15e;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+        .timeline-item::before {
+            content: '🌿';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🌾 我的星露谷主页</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">关于我</a></li>
+                <li class="nav-item"><a class="nav-link" href="works.html">作品</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">技能</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 内容区 -->
+<div class="container mb-5">
+    <!-- 个人信息卡片 -->
+    <div class="stardew-card p-4 p-md-5 text-center mb-4">
+        <div class="avatar-circle mb-3">
+                    <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C._98h3KcZqDPH6jl95oY-uQAAAA?w=202&h=202&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="头像">
+                </div>
+        <h2 class="fw-bold mb-2" style="color:#606c38">张亚东</h2>
+        <p class="lead fs-5 mb-1" style="color:#bc6c25">热爱生活 · 喜欢创作 · 田园风格爱好者</p>
+        <p class="text-muted">"每一天都像星露谷的清晨，充满希望与可能。"</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- 基本信息 -->
+        <div class="col-md-6">
+            <div class="stardew-card p-4 h-100">
+                <h3 class="fw-bold mb-3" style="color:#606c38">📋 基本信息</h3>
+                <div class="info-item">
+                    <strong>🏠 所在地：</strong>四川·泸州
+                </div>
+                <div class="info-item">
+                    <strong>🎓 学校：</strong>江阳城建职业学院
+                </div>
+                <div class="info-item">
+                    <strong>🎂 年龄：</strong>19岁
+                </div>
+                <div class="info-item">
+                    <strong>💫 座右铭：</strong>用热爱耕耘，用创意收获
+                </div>
+                <div class="info-item">
+                    <strong>📧 联系方式：</strong>z2608496945@126.com
+                </div>
+            </div>
+        </div>
+
+        <!-- 兴趣爱好 -->
+        <div class="col-md-6">
+            <div class="stardew-card p-4 h-100">
+                <h3 class="fw-bold mb-3" style="color:#606c38">🎯 兴趣爱好</h3>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="stardew-card p-3 text-center">
+                            <div class="fs-2">🎨</div>
+                            <p class="mb-0 fw-bold">绘画设计</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stardew-card p-3 text-center">
+                            <div class="fs-2">💻</div>
+                            <p class="mb-0 fw-bold">编程开发</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stardew-card p-3 text-center">
+                            <div class="fs-2">🎮</div>
+                            <p class="mb-0 fw-bold">游戏探索</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stardew-card p-3 text-center">
+                            <div class="fs-2">📚</div>
+                            <p class="mb-0 fw-bold">阅读写作</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 我的故事 -->
+    <div class="stardew-card p-4 p-md-5 mt-4">
+        <h3 class="fw-bold mb-4" style="color:#606c38">📖 我的故事</h3>
+        <div class="timeline-item">
+            <h5 class="fw-bold" style="color:#bc6c25">🌱 起步</h5>
+            <p>从第一次接触编程开始，就像在田院种下第一颗种子，充满了期待和好奇。</p>
+        </div>
+        <div class="timeline-item">
+            <h5 class="fw-bold" style="color:#bc6c25">🌿 成长</h5>
+            <p>不断学习前端开发、UI设计和创意工具，每一天都在收获新的技能和经验。</p>
+        </div>
+        <div class="timeline-item">
+            <h5 class="fw-bold" style="color:#bc6c25">🌾 收获</h5>
+            <p>完成了许多有趣的项目，认识了志同道合的伙伴，就像在星露谷收获满满的金星作物！</p>
+        </div>
+        <div class="timeline-item">
+            <h5 class="fw-bold" style="color:#bc6c25">✨ 展望</h5>
+            <p>继续在创作的道路上耕耘，用代码和设计创造更多温暖有趣的作品。</p>
+        </div>
+    </div>
+
+    <!-- 返回按钮 -->
+    <div class="text-center mt-4">
+        <a href="index.html" class="btn stardew-btn btn-lg px-4">🏠 返回首页</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
